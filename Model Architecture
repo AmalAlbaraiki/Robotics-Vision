@@ -1,0 +1,44 @@
+# ⚙️ Model Architecture — ChatGPT Integration
+
+## 1. Overview
+The AI system is powered by OpenAI’s ChatGPT API, which uses the GPT (Generative Pre-trained Transformer) model. It processes natural language input and returns human-like text responses.
+
+---
+
+## 2. ChatGPT Model Flow
+**Step-by-step logic:**
+1. User (human) provides text or voice input.
+2. Input is converted into tokens (numerical representation of text).
+3. The GPT model predicts the next tokens to generate a response.
+4. Response is converted back into text.
+5. Flask server sends the text to the visual display system (eyes + text output).
+
+---
+
+## 3. Project-Level AI Architecture
+[User Detected] → HuskyLens → ESP32 → Flask Server → ChatGPT API
+↓
+Eye Display (Active/Sleep Mode)
+--
+
+---
+
+## 4. Design Considerations
+- **Asynchronous Processing:** Prevents delays in conversation.
+- **Token Optimization:** Keeps API responses efficient.
+- **State Awareness:** Maintains “awake” or “sleeping” modes for the robot.
+- **Modularity:** Each function (detection, chat, animation) runs independently but communicates via HTTP and UART.
+
+---
+
+## 5. Data Flow Summary
+| Component | Input | Output | Description |
+|------------|--------|---------|-------------|
+| HuskyLens | Visual data | Detection signal | Detects presence of human |
+| ESP32 | Serial input | HTTP request | Sends signal to Flask |
+| Flask Server | API request | ChatGPT response | Handles AI interaction |
+| UI | ChatGPT text | Eye animation + display | Shows interaction visually |
+
+--
+
+
