@@ -1,0 +1,50 @@
+Robotics-Vision/
+├─ AI-CHATGPT/
+│  ├─ Research_AI.md
+│  ├─ Model_Architecture.md
+│  ├─ Integration_Method.md
+│  └─ References.md
+--
+🧠 Research on Artificial Intelligence (AI)
+
+ 1. Introduction
+Artificial Intelligence (AI) is the capability of machines to perform tasks that typically require human intelligence. These tasks include understanding natural language, recognizing patterns, learning from data, and generating human-like responses.
+
+In this project, AI is implemented through OpenAI’s ChatGPT API, which allows the robot to understand and respond naturally to human input.
+
+---
+
+ 2. Generative AI
+Generative AI refers to models that can produce new data or content based on training from large datasets. These models learn the patterns, relationships, and context within language, allowing them to generate realistic text responses.
+
+ Examples of Generative AI Applications
+- Conversational agents (e.g., ChatGPT, Google Bard)
+- Creative writing and content generation
+- Image and video synthesis (e.g., DALL·E, Stable Diffusion)
+- Voice synthesis and translation
+
+---
+
+ 3. Large Language Models (LLMs)
+Large Language Models like GPT (Generative Pre-trained Transformer) are trained on massive text corpora to predict the next word in a sentence. This predictive ability enables them to generate coherent and contextually appropriate text.
+
+Key Characteristics:
+- Transformer architecture: Uses attention mechanisms to understand context.
+- Pre-training:Learns from general data.
+- Fine-tuning:Adapts to specific tasks such as dialogue or summarization.
+
+---
+
+ 4. AI in Robotics
+Integrating AI into robotics allows machines to:
+- Understand and respond to human language.
+- Adapt behavior based on real-time input.
+- Create more engaging and intelligent interactions.
+
+In this project, AI helps the robot detect humans and engage them in conversation, creating a more human-like interaction model.
+
+---
+
+ 5. Conclusion
+AI serves as the “brain” of this project, transforming static detection into dynamic, meaningful interaction. The combination of ChatGPT, Flask, and HuskyLens demonstrates how language understanding and vision can merge into intelligent robotic behavior.
+--
